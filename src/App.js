@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import HomeScreen from './screens/HomeScreen/HomeScreen';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import OrderScreen from './screens/OrderScreen/OrderScreen';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+    <div className='appContainer'>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomeScreen />} />
+          <Route path="/order" element={<OrderScreen />} />
+        </Routes>
+      </BrowserRouter>
+      </div>
+      <ToastContainer />
     </div>
   );
 }

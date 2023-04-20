@@ -1,0 +1,49 @@
+.prodContainer {
+    width: fit-content;
+    background-color: #F6F6F6;
+    box-shadow: inset -2px 2px 4px rgba(205, 205, 205, 0.2), inset 2px -2px 4px rgba(205, 205, 205, 0.2), inset -2px -2px 4px rgba(255, 255, 255, 0.9), inset 2px 2px 5px rgba(205, 205, 205, 0.9);
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.mainProdContainer {
+    display: flex;
+    flex-direction: row;
+    background-color: #F6F6F6;
+    box-shadow: inset -2px 2px 4px rgba(205, 205, 205, 0.2), inset 2px -2px 4px rgba(205, 205, 205, 0.2), inset -2px -2px 4px rgba(255, 255, 255, 0.9), inset 2px 2px 5px rgba(205, 205, 205, 0.9);
+    border-radius: 10px;
+    margin: 20px 30px;
+    padding: 10px;
+    min-height: 80px;
+}
+
+.prodName {
+    color: #4A5662;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.addBtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #F0F0F3;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px 10px;
+    box-shadow: -5px 5px 10px rgba(221, 221, 224, 0.2), 5px -5px 10px rgba(221, 221, 224, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.9), 5px 5px 13px rgba(221, 221, 224, 0.9);
+}
+
+.prodImg {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 400px;
+}
+
+.prodImg2 {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 80px;
+    object-fit: cover;
+}

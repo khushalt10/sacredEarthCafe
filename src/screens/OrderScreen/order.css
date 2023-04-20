@@ -1,0 +1,52 @@
+.container2 {
+    flex: 1;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    background: #F0F3F3;
+}
+
+.orders {
+    background: #F1F1F1;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: inset -3px -3px 7px #FFFFFF, inset 2px 2px 5px rgba(174, 174, 192, 0.4);
+    border-radius: 15px;
+}
+
+.instructions {
+    color: #76DFE5;
+    text-decoration: underline;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.checkout {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 20px;
+    margin: 0 1%;
+    align-items: center;
+    width: 22%;
+    background: linear-gradient(135deg, #459EAF 0%, #007991 100%);
+    box-shadow: -5px 5px 10px rgba(205, 205, 205, 0.2), 5px -5px 10px rgba(205, 205, 205, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.9), 5px 5px 13px rgba(205, 205, 205, 0.9);
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    justify-content: space-between;
+    padding: 15px 20px;
+    
+    @media (max-width: 1000px) {
+      width: 60%;
+    }
+  
+    @media (max-width: 800px) {
+      width: 80%;
+    }
+  
+    @media (max-width: 600px) {
+      width: 100%;
+    }
+}
